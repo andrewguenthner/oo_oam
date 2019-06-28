@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Mural Data Updatedr</title>
+  </head>
+   <body>
+    <!--Collapsable navigation bar: common to all pages-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <img src="Guenthner-extra-small.png" width="28" height="35" class="d-inline-block align-top rounded-circle mr-3" alt="">
+      <a class="navbar-brand" href="https://andrewguenthner.com">Andrew Guenthner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Oakland Mural GeoData Updater <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Main body on landing page, cards on grid-->
+    <div class="container mt-5 mb-5">
+        <button type="button" style="width:200px;" id="update_mural" class="btn btn-primary btn-lg d-block mx-auto">Update Mural Data</button>
+    </div>
+    <div class="container mb-5 d-block" id="indicator">
+        <!--Javascript will alter this text-->
+        <p id="instructions">Press the button above to update mural data.  You will then see a message indicating the update was successful.  
+          Then press the download button below to save the data.  If you hit the download button before updating, 
+          nothing will happen.
+        </p>
+        <div class="alert alert-warning alert-dismissible fade show" id="browser_notice" role="alert">
+            Note that on some browsers, a page with odd-looking text may open.  If so, 
+            use the "Save as" function (try right-clicking or press and hold to get a context menu) and 
+            save the file.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+        </div>
+    </div>
+    <div class="container mt-5 mb-5">
+        <a download="muralfile.js" href="" class="btn btn-outline-dark btn-lg active mx-auto d-block" style="width: 200px;" id="download_button" role="button" aria-pressed="true">Download Data</a>
+    </div>
+    <div class="container mt-5">
+      Special thanks to:  Donish Cushing at OpenOakland for substantial contirbutions to building this tool!
+    </div>
+    <!-- Footer -->
+    <div class="container mt-2 mt-md-5 text-light bg-secondary">
+        Last updated 06-27-2019 by Andrew Guenthner.  Released under the 
+        <a class="container-link text-warning" href="https://opensource.org/licenses/MIT" target="_blank">
+            MIT Open Source License</a>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
