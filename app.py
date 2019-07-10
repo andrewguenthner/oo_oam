@@ -142,7 +142,7 @@ def get_mural_data():
     mural_df['zoom'] = 13
 
     # 'icon' needs to be a file name.  OAM uses 'mural_icon.png'  
-    mural_df['icon'] = 'artgallery_blue.png'
+    mural_df['icon'] = 'art_black_t.png'
 
     # 'popup' controls what goes in the pop-up when the marker is selected
     # We will just use the name
@@ -158,7 +158,7 @@ def get_mural_data():
 
     # 'maps' is a configuration variable to tell the OAM software which map to
     # put the markers on.  Map #20 is currently used.
-    mural_df['maps'] = 15
+    mural_df['maps'] = 17
 
     # Now that the DataFrame is complete, we can turn it into geojson
     # We will make a list of all the properties column names
