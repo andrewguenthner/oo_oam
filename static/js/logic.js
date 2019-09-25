@@ -9,12 +9,15 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
   maxZoom: 15,
   id: "mapbox.streets",
-  accessToken: API_KEY
+  accessToken: API_KEY,
 }).addTo(muralMap);
 
 // Listen for the button press, then grab data
 
 d3.select("#update_mural").on("click",  function(e){
+
+d3.select("#instructions")
+  .text("Data collection started ... this will take a few minutes.");
 
 const url = "/get_mural_data"
 d3.json(url).then( function (muralData) {
@@ -34,7 +37,7 @@ d3.json(url).then( function (muralData) {
     if (location) {
       // Add a new marker to the cluster group and bind a pop-up
       markers.addLayer(L.marker([location.coordinates[1], location.coordinates[0]])
-        .bindPopup(muralData.features[i].properties.name));
+        .bindPopup(muralData.features[i].properties.popup));
             }
         }; // end of data loop
 
