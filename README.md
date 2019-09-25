@@ -7,6 +7,15 @@ Join the slack channel:  #dos-oakartmurmur
 Project lead:  Andrew Guenthner (slack: @Andrew Guenthner, or andrewguenthner@gmail.com).
 Project partner:  Oakland Art Murmur (oaklandartmurmur.org)
 
+### Before You Dive In ...
+
+* To run and test the scraping code, you need to obtain an API key from Mapbox.  Your key needs to be placed in your local copy of the config.js file.  Please, if you push to Github, make sure your key is not published by
+changing config.js back to "YOUR_API_KEY_HERE"
+
+* We are currently tracking issues on the GitHub issues page.  Please check there to see what specific tasks are needed, and please feel free to create a new issue if you notice some work that needs to be done.  
+
+* Running the scraper will take about 10 minutes, so, if you want to test extensively, consider using a finite loop with just a few iterations, rather than the over 600 needed to collect all the data.  
+
 ### We Appreciate Your Help
 
 You can:
